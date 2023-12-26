@@ -1,1 +1,291 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+@font-face {
+    font-family: "ibmpc";
+    src: url("/assets/fonts/WebPlus_IBM_VGA_8x16.woff") format("woff");
+  }
+
+hr.light-176 {
+    border: 0;
+    height: 1em;
+    opacity: 1; 
+    background: url("/assets/images/shade-176-white.png");
+}
+
+hr.medium-176 {
+    border: 0;
+    height: 1em;
+    opacity: 1; 
+    background: url("/assets/images/shade-176-lightGray.png");
+}
+
+hr.dark-176 {
+    border: 0;
+    height: 1em;
+    opacity: 1; 
+    background: url("/assets/images/shade-176-black.png");
+}
+
+hr.light-177 {
+    border: 0;
+    height: 1em;
+    opacity: 1; 
+    background: url("/assets/images/shade-177-white.png");
+}
+
+hr.medium-177 {
+    border: 0;
+    height: 1em;
+    opacity: 1; 
+    background: url("/assets/images/shade-177-lightGray.png");
+}
+
+hr.dark-177 {
+    border: 0;
+    height: 1em;
+    opacity: 1; 
+    background: url("/assets/images/shade-177-black.png");
+}
+
+hr.light-178 {
+    border: 0;
+    height: 1em;
+    opacity: 1; 
+    background: url("/assets/images/shade-178-white.png");
+}
+
+hr.medium-178 {
+    border: 0;
+    height: 1em;
+    opacity: 1; 
+    background: url("/assets/images/shade-178-lightGray.png");
+}
+
+hr.dark-178 {
+    border: 0;
+    height: 1em;
+    opacity: 1; 
+    background: url("/assets/images/shade-178-black.png");
+}
+
+
+.page-header {
+    font-family: "ibmpc", monospace;
+    font-size: 16px;
+    line-height: 1;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #00aaaa;  
+    color: #000;
+    padding-left: 1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.offline {
+    animation: blinker 1s infinite;
+    animation-timing-function: steps(1, end);
+    color: #aa0000;
+    float: right;
+  }
+
+  dl {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  span {
+    display: block;
+  }
+
+div.active_message {
+    border-color: #fff;
+    color: #fff;
+}
+
+div.active_message p.message-body {
+    color: #bbb;
+}
+
+
+.online {
+    color: #00aa00;
+    float: right;
+    padding-right: .5em;
+}
+
+.box-text {
+    margin-bottom: 0;
+}
+
+ .blink {
+    animation: blinker 1s infinite;
+    animation-timing-function: steps(1, end);
+    color: #FFF;
+  }
+  
+  .double{
+    margin-top: 1em;
+    background-color: #000084;
+    border-width: 4px;
+    border-color: #bbb;
+    border-style: double;
+    padding: 1em;
+  }
+
+  .single {
+    margin-top: 1em;
+    background-color: #000084;
+    border-width: 1px;
+    border-color: #bbb;
+    border-style: solid;
+    padding: 1em;
+  }
+
+
+.dosbox {
+    margin-top: 1em;
+    color: #000;
+    background-color: #bbb;
+    width: 100%;
+    box-shadow: 10px 10px 0 #000000;
+    padding: 1em;
+}
+
+h1.title {
+    font-size: 1em;
+    line-height: 1;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    clear:both;
+}
+
+h1.title-light {
+    font-size: 1em;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    clear: both;    
+
+}
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .low-res {
+    max-height: 140px;
+    width: 220px;
+    float: left;
+    margin-right: 2em;
+    margin-left: 0;
+    image-rendering: pixelated;
+    box-shadow: 10px 10px 0 #555555;
+    
+    }
+
+    .mid-res {
+        width: 100%;
+        clear: both;
+        margin-right: 2em;
+        margin-left: 0;
+        image-rendering: pixelated;
+        box-shadow: 10px 10px 0 #555;
+        margin-top: 1em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+
+    button.dos-like.nav-link.active p:before {
+        content: "> ";
+    }
+    button.dos-like.nav-link.active p:after {
+        content: " <";
+    }
+
+
+button.dos-like.nav-link.active {
+    color: #FFF;
+    border-radius: none !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    background-color: #000084 !important;
+    border-top: 1px #FFF solid; 
+    border-left: 1px #FFF solid;
+    border-right: 1px #FFF solid;
+    border-bottom: 0 !important;
+}
+
+
+button.dos-like.nav-link p {
+    padding: 0 1em;
+    margin: 0;
+}
+
+button.dos-like.nav-link.active p {
+    background-color: #BBB;
+    color: #333;
+}
+
+button.dos-like.nav-link {
+    color: #999;
+    border-bottom: 1px #FFF solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+ul.dos-like {
+    margin:1em;
+    padding:0;
+    list-style:none;
+ }
+ 
+ ul.dos-like li {
+    padding-top: 1em;
+    margin-bottom: 1em;
+ }
+ 
+ ul.dos-like li:before {
+    content: "* " 
+ }
+ 
+.content {
+    //margin-left: 1em;
+    //margin-right: -1.5em;
+}
+
+.main-menu {
+    margin-top: 0;
+    margin-left: -1.75em;
+    margin-right: .75em;
+    margin-bottom: 0;
+}
+
+a.secondary-link {
+    color: #fefe54;
+    text-decoration: none;
+}
+a.secondary-link:hover {
+    color: #fefe54;
+    background-color: #aa5500;
+}
+
+body {
+    font-family: "ibmpc", monospace;
+    font-size: 16px;
+    line-height: 1;
+    background-color: #000084;  
+    color: #bbbbbb;
+}

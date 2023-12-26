@@ -1,0 +1,34 @@
+[
+  {
+    "MessageNumber": "1",
+    "From":"Mcp",
+    "Date":"04/10/23 10:40",
+    "To":"All",
+    "Subject":"State of the System",
+    "Message":"We've joined FSXnet. FSXnet is described as a \"fun, simple, and experimental\" \nnetwork, and is based out of New Zealand, though there are nodes all over the \nworld. It has a limited number of message areas (which in this day and age is \nprobably a good thing) and was much easier and less bureaucratic than \nfidonet- proper. There are about a dozen echoes ranging from general chat to \nretro computers to various pop culture subjects like music and movies\\/tv. It \nseems to have a decent (but not overwhelming) amount of traffic from a good \ngroup of people. All of the 'echo' message bases have (FSXnet) after their \nname to indicate that they're networked.\n\n... Coming Soon: Mouse Support for Edlin!\n\n"
+ }
+,  {
+    "MessageNumber": "2",
+    "From":"Mcp",
+    "Date":"04/15/23 12:11",
+    "To":"All",
+    "Subject":"State of the System",
+    "Message":"Getting ready to implement a slew of hardware updates:\n----------------------------------------\n128k Cache upgraded to 256k\n8 MB System RAM upgraded to 32 MB\n33 MHz DX processor upgraded to 40 MHz\n500 MB HDD upgraded to 4 GB\n\nThis will open an upgrade path from MS-DOS \\/ DesqView to OS\\/2 2.11 w/\nTCP\\/IP 2.0. This in turn will allow us to possibly switch from using tcpser\non the Raspberry Pi to VMODEM support using Ray Gwinn's SIO drivers. This\nwill probably open up one or two more nodes. Pending performance it might go\nto three telnet nodes and a fourth modem node, or possibly four telnet nodes\nand a fifth modem node.\n\nThis will also allow us to run binkd on the system, rather than using the\ncollection of netcat scripts I've written to make that happen. This would\nmean all of the FTN (fido-type network) software would be running on the\nactual 386, and completely divorce the system from any dependence on the\nRaspberry Pi.\n\n"
+ }
+,  {
+    "MessageNumber": "3",
+    "From":"Mcp",
+    "Date":"04/21/23 15:56",
+    "To":"All",
+    "Subject":"State of the System",
+    "Message":"Okay, the system has been moved from MS-DOS\\/DesqView to OS\\/2 Warp 3.\n\nI was going to try and see if I could use OS\\/2 2.11, which is a little bit\nmore 'period appropriate' for the 386, but the networking stack was not\ncooperating. I think Warp probably does a little better with memory\nmanagement anyway, not that it matters much on a 386 with 32 MB of RAM.\n\nRight now, I'm posting from a telnet connection. It doesn't seem particularly\nfast, but it's a BBS running almost thirty year old software on a 386, so\nexpectations must be managed. I haven't really started tweaking the OS yet at\nall, so it's likely that I'll be able to squeeze a bit more performance out\nof it. It does feel entirely usable at the moment, though.\n\n"
+ }
+,  {
+    "MessageNumber": "4",
+    "From":"Mcp",
+    "Date":"05/02/23 10:58",
+    "To":"All",
+    "Subject":"State of the System",
+    "Message":"All of the hardware upgrades are finished and the system seems completely\nstable. The bad cache chip has been replaced, and an 80 MHz crystal has been\nprocured and installed so the system is now running at 40 MHz.  OS\\/2 Warp 3\nConnect seems to be running pretty well. I did try upgrading the SIO drivers\nfrom 1.60d to the 2.03 version of the 2K release, but it was much much much\nslower, so I think we'll stick with 1.60.\n\nNew door games Land of Devastation and Legend of the Red Dragon 2 have been\ninstalled and should be working. I have Barren Realms Elite fixed, as well.\nI'm looking into a TIC processor to set up file areas, and then I think we\ncan set BRE up to work on the FSXnet's interbbs league.  In the process of\nfixing and adding new door games, I moved the D)oors menu from L)etter\ncommands to numbers, because there were just too many games that started\nwith the letter L. The D)oors menu has been updated to reflect this.\n\nA number of FSXnet message echos have been retired by the network (Food,\nGardening, DIY, etc) and replaced with a more general Lifestyle echo where\nyou can talk about any of these things and more. I think that was probably a\ngood call, because it makes more sense to have a smaller number of more\nactive message areas than a larger number of mostly inactive ones. The old\nechos have been removed and the new one has been setup.\n\n"
+ }
+]

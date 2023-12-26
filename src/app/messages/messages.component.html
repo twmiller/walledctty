@@ -1,0 +1,32 @@
+<div class="container content">
+    <div class="row">
+        <div class="col">
+            <div class="double">The following content has been exported from the T.A.G. JAM message base using a custom Turbo Pascal application on the OS/2 machine. All three local message bases have their content automatically exported to this page.</div>
+        </div>
+    </div>
+    <br />
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs tui">
+        <li [ngbNavItem]="1">
+            <button class="dos-like" ngbNavLink (click)="load_route('system')"><p>System News</p></button>
+        </li>
+        <li [ngbNavItem]="2">
+            <button class="dos-like" ngbNavLink (click)="load_route('past')"><p>Through the Past, Darkly</p></button>
+        </li>
+        <li [ngbNavItem]="3">
+            <button class="dos-like" ngbNavLink (click)="load_route('present')"><p>The Future is Now</p></button>
+        </li>
+    </ul>
+    <h1 class="page-header">{{ boardName }}</h1>
+    <ng-container *ngFor="let message of boardMessages">
+        <div [class.single] = "active_message !== message.MessageNumber" [class.double] = "active_message === message.MessageNumber" [class.active_message] = "active_message === message.MessageNumber" style="width: 85ch;">
+            <span><dl>From:</dl> {{message.From}}</span>
+            <span><dl>To:</dl> {{message.To}}</span>
+            <span><dl>Date:</dl> {{message.Date}}</span>
+            <span><dl>Subject:</dl> {{message.Subject}}</span>
+            <span><dl>Link:</dl><a class="secondary-link" href="https://walledctty.com/messages/{{ active_board }}#message_{{message.MessageNumber}}"> https://walledctty.com/messages/{{ active_board }}#message_{{message.MessageNumber}}</a></span>
+            <hr [class.light-176] = "active_message === message.MessageNumber" [class.medium-176] = "active_message !== message.MessageNumber"/>
+            <p class="message-body">{{message.Message}}</p>
+        </div>
+    </ng-container>
+    <div class="single" *ngIf="!boardMessages.length"><span class="offline" style="float: left;">Error:</span>&nbsp;Currently there are no messages in this forum, or maybe they weren't exported correctly..? :(</div>
+</div>

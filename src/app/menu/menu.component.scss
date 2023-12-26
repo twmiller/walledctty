@@ -1,0 +1,33 @@
+.reverse {
+    color: #000;
+    background-color: #bbb;
+}
+
+.subheader {
+    color: #fff;
+    text-align: center;
+    margin: .5em -.75em;
+    padding: .5em 0;
+    border: 1px solid #fff;
+    margin-bottom: 0;
+    
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* reverse the colors */
+a:hover {
+    color: #fff;
+    background-color: #000;
+    margin: 0;
+}
+
+a.active-link {
+    background-color: #00aaaa;
+    color: #FFF;
+    font-weight: bold;
+    margin: 0;
+}
